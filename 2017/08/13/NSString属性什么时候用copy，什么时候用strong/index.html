@@ -94,49 +94,25 @@
 
 
 
-<meta name="description" content="|: 表示父视图
--:表示距离
-V: :表示垂直 vertical
-H: :表示水平 horizontal
-
-= :表示视图间距、宽度和高度必须大于或等于某个值
-
-&amp;lt;= :表示视图间距、宽度和高度必须小宇或等于某个值
-== :表示视图间距、宽度或者高度必须等于某个值
-@ :&amp;gt;=、&amp;lt;=、== 限制 最大为 1000
-##1.|-[view]-|: 视图处在父视图的左右边缘内
-##2">
+<meta name="description" content="我们在声明一个NSString属性时，对于其内存相关特性，通常有两种选择(基于ARC环境)：strong与copy。那这两者有什么区别呢？什么时候该用strong，什么时候该用copy呢？让我们先来看个例子。
+示例
+我们定义一个类，并为其声明两个字符串属性，如下所示：
+@interface TestStringClass ()@property (nonatomic, strong) NSStri">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VFLAutoLayout">
-<meta property="og:url" content="https://xuyazhong.github.io/2016/07/12/VFLAutoLayout/index.html">
+<meta property="og:title" content="NSString属性什么时候用copy，什么时候用strong?">
+<meta property="og:url" content="https://xuyazhong.github.io/2017/08/13/NSString属性什么时候用copy，什么时候用strong/index.html">
 <meta property="og:site_name" content="许亚中的技术博客">
-<meta property="og:description" content="|: 表示父视图
--:表示距离
-V: :表示垂直 vertical
-H: :表示水平 horizontal
-
-= :表示视图间距、宽度和高度必须大于或等于某个值
-
-&amp;lt;= :表示视图间距、宽度和高度必须小宇或等于某个值
-== :表示视图间距、宽度或者高度必须等于某个值
-@ :&amp;gt;=、&amp;lt;=、== 限制 最大为 1000
-##1.|-[view]-|: 视图处在父视图的左右边缘内
-##2">
-<meta property="og:updated_time" content="2016-07-12T01:05:15.000Z">
+<meta property="og:description" content="我们在声明一个NSString属性时，对于其内存相关特性，通常有两种选择(基于ARC环境)：strong与copy。那这两者有什么区别呢？什么时候该用strong，什么时候该用copy呢？让我们先来看个例子。
+示例
+我们定义一个类，并为其声明两个字符串属性，如下所示：
+@interface TestStringClass ()@property (nonatomic, strong) NSStri">
+<meta property="og:updated_time" content="2017-08-13T05:31:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VFLAutoLayout">
-<meta name="twitter:description" content="|: 表示父视图
--:表示距离
-V: :表示垂直 vertical
-H: :表示水平 horizontal
-
-= :表示视图间距、宽度和高度必须大于或等于某个值
-
-&amp;lt;= :表示视图间距、宽度和高度必须小宇或等于某个值
-== :表示视图间距、宽度或者高度必须等于某个值
-@ :&amp;gt;=、&amp;lt;=、== 限制 最大为 1000
-##1.|-[view]-|: 视图处在父视图的左右边缘内
-##2">
+<meta name="twitter:title" content="NSString属性什么时候用copy，什么时候用strong?">
+<meta name="twitter:description" content="我们在声明一个NSString属性时，对于其内存相关特性，通常有两种选择(基于ARC环境)：strong与copy。那这两者有什么区别呢？什么时候该用strong，什么时候该用copy呢？让我们先来看个例子。
+示例
+我们定义一个类，并为其声明两个字符串属性，如下所示：
+@interface TestStringClass ()@property (nonatomic, strong) NSStri">
 
 
 
@@ -165,13 +141,13 @@ H: :表示水平 horizontal
 
 
 
-  <link rel="canonical" href="https://xuyazhong.github.io/2016/07/12/VFLAutoLayout/"/>
+  <link rel="canonical" href="https://xuyazhong.github.io/2017/08/13/NSString属性什么时候用copy，什么时候用strong/"/>
 
 
 
 
 
-  <title>VFLAutoLayout | 许亚中的技术博客</title>
+  <title>NSString属性什么时候用copy，什么时候用strong? | 许亚中的技术博客</title>
   
 
 
@@ -288,7 +264,7 @@ H: :表示水平 horizontal
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xuyazhong.github.io/2016/07/12/VFLAutoLayout/">
+    <link itemprop="mainEntityOfPage" href="https://xuyazhong.github.io/2017/08/13/NSString属性什么时候用copy，什么时候用strong/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xuyazhong">
@@ -305,7 +281,7 @@ H: :表示水平 horizontal
 
         
         
-          <h1 class="post-title" itemprop="name headline">VFLAutoLayout</h1>
+          <h1 class="post-title" itemprop="name headline">NSString属性什么时候用copy，什么时候用strong?</h1>
         
 
         <div class="post-meta">
@@ -317,8 +293,8 @@ H: :表示水平 horizontal
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-12T09:04:54+08:00">
-                2016-07-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-13T13:26:21+08:00">
+                2017-08-13
               </time>
             
 
@@ -355,27 +331,27 @@ H: :表示水平 horizontal
       
 
       
-        <p>|: 表示父视图</p>
-<p>-:表示距离</p>
-<p>V: :表示垂直 vertical</p>
-<p>H: :表示水平 horizontal</p>
-<blockquote>
-<p>= :表示视图间距、宽度和高度必须大于或等于某个值</p>
-</blockquote>
-<p>&lt;= :表示视图间距、宽度和高度必须小宇或等于某个值</p>
-<p>== :表示视图间距、宽度或者高度必须等于某个值</p>
-<p>@ :&gt;=、&lt;=、== 限制 最大为 1000</p>
-<p>##1.|-[view]-|: 视图处在父视图的左右边缘内</p>
-<p>##2.|-[view] : 视图处在父视图的左边缘</p>
-<p>##3.|[view] : 视图和父视图左边对齐</p>
-<p>##4.-[view]- : 设置视图的宽度高度</p>
-<p>##5.|-30.0-[view]-30.0-|: 表示离父视图 左右间距 30</p>
-<p>##6.[view(200.0)] : 表示视图宽度为 200.0</p>
-<p>##7.|-[view(view1)]-[view1]-| :表示视图宽度一样，并且在父视图左右边缘内</p>
-<p>##8. V:|-[view(50.0)] : 视图高度为 50</p>
-<p>##9: V:|-(==padding)-[imageView]-&gt;=0-[button]-(==padding)-| : 表示离父视图的距离为Padding,这两个视图间距必须大于或等于0并且距离底部父视图为 padding。</p>
-<p>##10: [wideView(&gt;=60@700)] :视图的宽度为至少为60 不能超过700，最大为1000</p>
-<p>##11: 如果没有声明方向默认为 水平V:</p>
+        <p>我们在声明一个NSString属性时，对于其内存相关特性，通常有两种选择(基于ARC环境)：strong与copy。那这两者有什么区别呢？什么时候该用strong，什么时候该用copy呢？让我们先来看个例子。</p>
+<p>示例</p>
+<p>我们定义一个类，并为其声明两个字符串属性，如下所示：</p>
+<p>@interface TestStringClass ()<br>@property (nonatomic, strong) NSString <em>strongString;<br>@property (nonatomic, copy) NSString </em>copyedString;<br>@end<br>上面的代码声明了两个字符串属性，其中一个内存特性是strong，一个是copy。下面我们来看看它们的区别。</p>
+<p>首先，我们用一个不可变字符串来为这两个属性赋值，</p>
+<ul>
+<li>(void)test {<br>NSString *string = [NSString stringWithFormat:@”abc”];<br>self.strongString = string;<br>self.copyedString = string;<br>NSLog(@”origin string: %p, %p”, string, &amp;string);<br>NSLog(@”strong string: %p, %p”, _strongString, &amp;_strongString);<br>NSLog(@”copy string: %p, %p”, _copyedString, &amp;_copyedString);<br>}<br>其输出结果是：</li>
+</ul>
+<p>origin string: 0x7fe441592e20, 0x7fff57519a48<br>strong string: 0x7fe441592e20, 0x7fe44159e1f8<br>copy string: 0x7fe441592e20, 0x7fe44159e200<br>我们要以看到，这种情况下，不管是strong还是copy属性的对象，其指向的地址都是同一个，即为string指向的地址。如果我们换作MRC环境，打印string的引用计数的话，会看到其引用计数值是3，即strong操作和copy操作都使原字符串对象的引用计数值加了1。</p>
+<p>接下来，我们把string由不可变改为可变对象，看看会是什么结果。即将下面这一句</p>
+<p>NSString *string = [NSString stringWithFormat:@”abc”];<br>改成：</p>
+<p>NSMutableString *string = [NSMutableString stringWithFormat:@”abc”];<br>其输出结果是：</p>
+<p>origin string: 0x7ff5f2e33c90, 0x7fff59937a48<br>strong string: 0x7ff5f2e33c90, 0x7ff5f2e2aec8<br>copy string: 0x7ff5f2e2aee0, 0x7ff5f2e2aed0<br>可以发现，此时copy属性字符串已不再指向string字符串对象，而是深拷贝了string字符串，并让_copyedString对象指向这个字符串。在MRC环境下，打印两者的引用计数，可以看到string对象的引用计数是2，而_copyedString对象的引用计数是1。</p>
+<p>此时，我们如果去修改string字符串的话，可以看到：因为_strongString与string是指向同一对象，所以_strongString的值也会跟随着改变(需要注意的是，此时_strongString的类型实际上是NSMutableString，而不是NSString)；而_copyedString是指向另一个对象的，所以并不会改变。</p>
+<p>结论</p>
+<p>由于NSMutableString是NSString的子类，所以一个NSString指针可以指向NSMutableString对象，让我们的strongString指针指向一个可变字符串是OK的。</p>
+<p>而上面的例子可以看出，当源字符串是NSString时，由于字符串是不可变的，所以，不管是strong还是copy属性的对象，都是指向源对象，copy操作只是做了次浅拷贝。</p>
+<p>当源字符串是NSMutableString时，strong属性只是增加了源字符串的引用计数，而copy属性则是对源字符串做了次深拷贝，产生一个新的对象，且copy属性对象指向这个新的对象。另外需要注意的是，这个copy属性对象的类型始终是NSString，而不是NSMutableString，因此其是不可变的。</p>
+<p>这里还有一个性能问题，即在源字符串是NSMutableString，strong是单纯的增加对象的引用计数，而copy操作是执行了一次深拷贝，所以性能上会有所差异。而如果源字符串是NSString时，则没有这个问题。</p>
+<p>所以，在声明NSString属性时，到底是选择strong还是copy，可以根据实际情况来定。不过，一般我们将对象声明为NSString时，都不希望它改变，所以大多数情况下，我们建议用copy，以免因可变字符串的修改导致的一些非预期问题。</p>
+<p>关于字符串的内存管理，还有些有意思的东西，可以参考NSString特性分析学习。</p>
 
       
     </div>
@@ -400,8 +376,8 @@ H: :表示水平 horizontal
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/12/开始写博客/" rel="next" title="开始写博客">
-                <i class="fa fa-chevron-left"></i> 开始写博客
+              <a href="/2016/07/12/VFLAutoLayout/" rel="next" title="VFLAutoLayout">
+                <i class="fa fa-chevron-left"></i> VFLAutoLayout
               </a>
             
           </div>
@@ -409,10 +385,6 @@ H: :表示水平 horizontal
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/13/NSString属性什么时候用copy，什么时候用strong/" rel="prev" title="NSString属性什么时候用copy，什么时候用strong?">
-                NSString属性什么时候用copy，什么时候用strong? <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
